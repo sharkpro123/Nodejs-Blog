@@ -1,0 +1,37 @@
+
+
+<div class="auther">
+  <h1 class="auther__heading">Hi, I am Ritika</h1>
+  <p class="auther__body">
+    I am a full stack developer with a passion for creating dynamic and
+    responsive web applications. I have experience in both front-end and
+    back-end development, and I enjoy working with the latest technologies to
+    build innovative solutions.
+  </p>
+</div>
+
+<img src="images\hero-image.webp" alt="person looking out through window" />
+
+<section class="articles">
+  <h2 class="articles__heading">Latest Posts</h2>
+  <ul class="article-ul">
+    
+<% data.forEach(post => { %>
+    <li>
+      <a href="/post/<%= post._id %>">
+        <span><%= post.title %></span>
+        <span class="article-list__date"
+          ><%= post.createdAt.toDateString() %></span
+        >
+      </a>
+    </li>
+
+    <% }) %>
+  </ul>
+
+  <% if (nextPage !== null) { %>
+    <a href="/?page=<%= nextPage %>" class="pagination">&lt; View Older Posts</a>
+  <% } %>
+ 
+
+</section>
