@@ -4,7 +4,7 @@
 
 
 
-<img width="305" alt="image" src="https://github.com/user-attachments/assets/c7d25676-e563-47a6-bc06-d51016594d5c" />
+<img width="350" alt="image" src="https://github.com/user-attachments/assets/c7d25676-e563-47a6-bc06-d51016594d5c" />
 
 
 This is a simple blog website that allows users to create, read, update, and delete blog posts. Built using Node.js, Express.js, and MongoDB, with server-side rendering (SSR) via EJS templates. The app provides an intuitive interface to manage posts, and the data is stored in a MongoDB database.
